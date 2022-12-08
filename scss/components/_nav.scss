@@ -1,0 +1,219 @@
+
+nav{
+    background-color: $colorTertiary;
+    height: px(80);
+    display: flex;
+    align-items: center;
+
+    // @media screen and (max-width: ($tablet - 1)){
+    // }  
+
+    @media screen and (max-width: ($mobile - 1)){
+        display: none;
+    }  
+
+
+    .logo{
+        margin-left: px(20);
+    }
+
+    .menu{
+        text-transform: uppercase;
+        color: $colorPrimary;
+        font-family: $titleFontFamily;
+        display: flex;
+        font-size: px(24);
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        height: px(80);
+        top: 0;
+        left: 0;
+
+        a{
+            color: $colorPrimary;
+        }
+
+        &__header{
+            &:hover{
+                color: $colorSecondary;
+            }
+        }
+    }
+
+
+    .panier{
+        display: flex;
+        align-items: center;
+        height: px(80);
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: px(220);
+    }
+    .favoris{
+        display: flex;
+        align-items: center;
+        height: px(80);
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: px(180);
+    }
+    .connexion{
+        font-family: $titleFontFamily;
+        text-transform: uppercase;
+        font-size: px(24);
+        display: flex;
+        align-items: center;
+        height: px(80);
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: px(30);
+
+        a{
+            color: $colorQuaternary;
+        }
+    }
+}
+
+
+
+.burger{
+    overflow: hidden;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+
+    @media screen and (max-width: ($mobile - 1)){
+        display: none;
+    }  
+
+    
+
+    &__logo--mobile{
+        position: absolute;
+        top: px(50);
+        left: px(30);
+    }
+
+    &__panier--mobile{
+        position: absolute;
+        top: 12%;
+        left: px(30);
+    }
+    &__favoris--mobile{
+        position: absolute;
+        top: 12%;
+        left: px(80);
+    }
+    &__connexion--mobile{
+        position: absolute;
+        top: 12%;
+        right: px(30);
+        // text-align: right;
+        // display: block;
+        // width: 100%;
+        font-size: px(20);
+        font-family: $titleFontFamily;
+        text-transform: uppercase;
+        color: $colorQuaternary;
+    }
+    &__histoire--mobile{
+        position: absolute;
+        top: 25%;
+        left: px(30);
+        font-size: px(35);
+        font-family: $titleFontFamily;
+        text-transform: uppercase;
+        color: $colorTertiary;
+    }
+    &__catalogue--mobile{
+        position: absolute;
+        top: 35%;
+        left: px(30);
+        font-size: px(35);
+        font-family: $titleFontFamily;
+        text-transform: uppercase;
+        color: $colorTertiary;
+    }
+    &__collaborations--mobile{
+        position: absolute;
+        top: 45%;
+        left: px(30);
+        font-size: px(35);
+        font-family: $titleFontFamily;
+        text-transform: uppercase;
+        color: $colorTertiary;
+    }
+    &__contact--mobile{
+        position: absolute;
+        top: 60%;
+        left: px(30);
+        font-size: px(16);
+        font-family: $textFontFamily;
+        text-transform: uppercase;
+        color: $colorQuaternary;
+    }
+    &__mentions--mobile{
+        position: absolute;
+        top: 65%;
+        left: px(30);
+        font-size: px(16);
+        font-family: $textFontFamily;
+        text-transform: uppercase;
+        color: $colorQuaternary;
+    }
+    &__cgv--mobile{
+        position: absolute;
+        top: 70%;
+        left: px(30);
+        font-size: px(16);
+        font-family: $textFontFamily;
+        text-transform: uppercase;
+        color: $colorQuaternary;
+    }
+    &__cgu--mobile{
+        position: absolute;
+        top: 75%;
+        left: px(30);
+        font-size: px(16);
+        font-family: $textFontFamily;
+        text-transform: uppercase;
+        color: $colorQuaternary;
+    }
+    &__aide--mobile{
+        position: absolute;
+        top: 80%;
+        left: px(30);
+        font-size: px(16);
+        font-family: $textFontFamily;
+        text-transform: uppercase;
+        color: $colorQuaternary;
+    }
+    &__search--mobile{
+        position: absolute;
+        top: 85%;
+        left: px(30);
+        font-size: px(16);
+        font-family: $textFontFamily;
+        text-transform: uppercase;
+        color: $colorQuaternary;
+    }
+    &__network--mobile{
+        display: flex;
+        justify-content: space-between;
+        margin-left: px(80);
+        margin-right: px(80);
+        margin-top: 92vh;
+    }
+
+}
+

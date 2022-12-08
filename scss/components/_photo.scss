@@ -1,0 +1,10 @@
+
+
+.photo{
+    filter: grayscale(100%);
+
+    &:hover{
+        filter: grayscale(0%);
+        transition: 0.3s;
+    }
+}

@@ -1,0 +1,22 @@
+
+
+footer{
+    position: relative;
+    background-color: $colorQuaternary;
+    height: px(600);
+
+    .menu-footer{
+
+        a{
+            color: $colorPrimary;
+        }
+
+        font-size: $textVarianteFontSize;
+        font-family: $textVarianteFontFamily;
+    }
+
+    .social-network{
+        display: flex;
+        gap: px(30);
+    }
+}

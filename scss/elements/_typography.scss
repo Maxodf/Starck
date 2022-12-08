@@ -1,0 +1,16 @@
+
+// Clash Display 
+@font-face {
+    font-family: 'ClashDisplay-Regular';
+    src: url('/assets/fonts/ClashDisplay-Regular.woff2') format('woff2'),
+         url('/assets/fonts/ClashDisplay-Regular.woff') format('woff'),
+         url('/assets/fonts/ClashDisplay-Regular.ttf') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+}
+  
+
+// Inter
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+  

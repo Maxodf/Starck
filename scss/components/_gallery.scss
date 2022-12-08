@@ -1,0 +1,103 @@
+
+
+.gallery {
+    // max-width: 1700px;
+    height: auto;
+    /* border: 1px solid #333; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, px(480));
+    justify-content: center;
+    grid-gap: px(10);
+    position: relative;
+}
+
+
+.item {
+    width: px(480);
+    height: px(480);
+    background-color: rgba(0, 0, 0, 0.1);
+    position: relative;
+
+    &:hover{
+        border: px(1) $colorQuaternary solid;
+        background-color: $colorTertiary;
+        transition: 0.2s;
+        cursor: pointer;
+
+        .item__title{
+            color: rgb(0, 0, 0);
+        }
+
+        .item__more{
+            display: block;
+        }
+        .item__custom{
+            display: block;
+        }
+        .item__panier{
+            display: block;
+        }
+        .item__favoris{
+            display: block;
+        }
+    }
+
+    &__more{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin-right: px(20);
+        margin-bottom: px(20);
+        display: none;
+    }
+
+    &__img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__title{
+        color: rgb(255, 255, 255);
+        font-family: $titleFontFamily;
+        font-size: px(40);
+        margin-top: px(30);
+        margin-left: px(30);
+    }
+
+    &__custom{
+        color: $colorQuaternary;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-bottom: px(10);
+        margin-left: px(20);
+        font-weight: 400;
+        font-size: px(16);
+        display: none;
+        &:hover{
+            color: $colorSecondary;
+        }
+    }
+
+    &__panier{
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: px(30);
+        margin-right: px(55);
+        display: none;
+    }
+
+    &__favoris{
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: px(30);
+        margin-right: px(15);
+        display: none;
+    }
+}
+

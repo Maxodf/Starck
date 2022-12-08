@@ -1,0 +1,47 @@
+
+
+
+
+.accordeon{
+    margin-left: 50px;
+    position: relative;
+    max-width: px(550);
+}
+
+.accordeon label {
+    display: block;
+    cursor: pointer;
+    height: px(55);
+    width: px(55);
+    position: absolute;
+    right: 0;
+    bottom: px(-60);
+}
+
+.accordeon label:hover {
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
+.accordeon .panel {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    color: $colorTertiary;
+}
+
+/* Hide checkboxes and radio-buttons */
+.accordeon input[type="radio"], .accordeon input[type="checkbox"] {
+    display: none;
+}
+/* Show .panel for corresponding to checked radio or checkbox */
+.accordeon input[type="radio"]:checked + .panel, .accordeon input[type="checkbox"]:checked + .panel {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+}
+
+.text{
+    color: white;
+}
+

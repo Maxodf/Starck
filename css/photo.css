@@ -1,0 +1,7 @@
+.photo {
+  filter: grayscale(100%);
+}
+.photo:hover {
+  filter: grayscale(0%);
+  transition: 0.3s;
+}/*# sourceMappingURL=photo.css.map */

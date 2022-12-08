@@ -1,0 +1,110 @@
+// Foundations
+@import './foundations/functions';
+@import './foundations/mixins';
+@import './foundations/variables';
+@import './foundations/grid';
+@import './foundations/normalize';
+
+
+
+// Elements
+@import './elements/buttons';
+@import './elements/typography';
+
+
+
+// Components
+@import './components/nav';
+@import './components/gallery';
+@import './components/swiper';
+@import './components/photo';
+@import './components/accordeon';
+@import './components/footer';
+
+//templates
+@import'./templates/home';
+
+
+//layout
+
+// @mixin ClashDisplay {
+//     font-family: "ClashDisplay-Regular";  
+// }
+
+
+
+h1{
+    font-family: $titleFontFamily;
+    font-size: $titleFontSize;
+    text-align: center;
+    color: $colorPrimary;
+    @media screen and (max-width: ($tablet - 1)){
+        font-size: px(50);
+        color: blue;
+    }  
+    @media screen and (max-width: ($mobile - 1)){
+        font-size: $titleFontSizeMobile;
+    }  
+}
+
+h2{
+    font-family: $titleFontFamily;
+    font-size: px(50);
+    color: $colorPrimary;
+
+    @media screen and (max-width: ($mobile - 1)){
+        font-size: px(24);
+    }  
+}
+
+p{
+    font-family: $textFontFamily;
+    font-size: $textFontSize;
+    font-weight: $textFontWeight;
+    line-height: px(30); 
+    color: $colorPrimary;
+    @media screen and (max-width: ($mobile - 1)){
+        font-size: $textFontSizeMobile;
+        line-height: px(20);
+    }  
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+// .text-white{       
+//     font-family: $textFontFamily;
+//     font-size: $textFontSize;
+//     font-weight: 300;
+//     font-weight: $textFontWeight;
+//     line-height: px(30); 
+//     color: $colorTertiary;
+// }
+
+// .text-black{       
+//     font-family: $textFontFamily;
+//     font-size: $textFontSize;
+//     font-weight: 300;
+//     font-weight: $textFontWeight;
+//     line-height: px(30); 
+//     color: $colorPrimary;
+// }
+
+.text{    
+    &__variante{
+        font-family: $textVarianteFontFamily;
+        font-size: $textVarianteFontSize;
+        line-height: px(40);
+
+        @media screen and (max-width: ($mobile - 1)){
+            font-size: $textVarianteFontSizeMobile;
+            line-height: px(22);
+        }  
+    }
+}
+
+
+
